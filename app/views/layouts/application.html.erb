@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="head inline-list">
+		<ul>
+			<li>HOME</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="container">
+			<%= yield %>
+		</div>
+	</div>
+	<div class="footer inline-list">
+		<ul>
+			<li><a href="#">About</a><span class="dot divider">&middot;</span></li>
+			<li><a href="#">Help</a><span class="dot divider">&middot;</span></li>
+		</ul>
+	</div>
 </body>
 </html>
